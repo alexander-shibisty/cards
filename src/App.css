@@ -1,0 +1,393 @@
+header {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #cdcdcd;
+  overflow: hidden;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  height: 50px;
+  background-color: #fff;
+  left: 0px;
+  right: 0px;
+  border-top: 1px solid #cdcdcd;
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+  z-index: 1000;
+}
+
+footer ul {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 1rem;
+  height: 100%;
+  padding-top: .5rem;
+  position: relative;
+}
+
+footer ul li img {
+  width: 30px;
+}
+
+footer .players-count {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #000;
+  z-index: 1;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.home-content form {
+  max-width: 300px;
+  padding: 1rem;
+  border: 1px solid #cdcdcd;
+}
+
+.home-content form input, .home-content form button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.home-content form .form-field:first-child {
+  margin-bottom: 1rem;
+}
+
+#chat {
+  position: fixed;
+  top: 54px;
+  bottom: 53px;
+  right: 0px;
+  width: 300px;
+  border-left: 1px solid #cdcdcd;
+  padding: 1rem;
+  padding-bottom: 120px;
+  background: #fff;
+}
+
+#chat form {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#chat .chat-messages {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 120px;
+  overflow-y: auto;
+}
+
+#chat .chat-messages ul li {
+  word-break: break-word;
+  padding: 1rem 10px;
+}
+
+.log-message {
+  background: #fff2c5;
+}
+
+#chat form input, #chat form button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.status-connection {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.status-open {
+  width: 10px;
+  height: 10px;
+  background: green;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.status-closing {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.status-closed {
+  width: 10px;
+  height: 10px;
+  background: red;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.status-uninstantiated {
+  width: 10px;
+  height: 10px;
+  background: black;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.hide {
+  display: none !important;
+}
+
+#popup-wrapper {
+  position: fixed;
+  background: rgba(0,0,0,.2);
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-wrapper form {
+  max-width: 300px;
+  padding: 1rem;
+  border: 1px solid #cdcdcd;
+}
+
+#popup-wrapper form input, #popup-wrapper form button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.viewer img {
+  width: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.viewer.player {
+  color: green;
+
+}
+
+.zones {
+  position: fixed;
+  top: 78px;
+  bottom: 250px;
+  left: 0px;
+  right: 270px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.zones .zone {
+  height: 50%;
+  overflow-y: auto;
+}
+
+.card {
+  cursor: pointer;
+  border: 1px solid #f5f5f5;
+  padding: .2rem;
+  word-break: break-word;
+}
+
+.card:hover {
+  color: rgba(0, 0, 0, .8);
+}
+
+#players {
+  position: fixed;
+  top: 54px;
+  bottom: 53px;
+  right: 0px;
+  width: 300px;
+  border-left: 1px solid #cdcdcd;
+  padding: 1rem;
+  padding-bottom: 120px;
+  background: #fff;
+}
+
+#players .players-list {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 120px;
+  overflow-y: auto;
+}
+
+#players .players-list ul li {
+  word-break: break-word;
+  padding: .2rem 10px;
+}
+
+.zone {
+  padding: .5rem;
+}
+
+.exchange {
+  background: #e6faff;
+}
+
+.player-zone {
+  background: #ffb7b7 !important;
+  position: fixed;
+  bottom: 49px;
+  left: 0px;
+  right: 0px;
+  height: 200px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.player-zone ul {
+  display: inline-block;
+  width: auto;
+  /* overflow: hidden; */
+  margin: 0px auto;
+  /* padding: 1rem; */
+}
+
+.player-zone ul li {
+  display: inline;
+  float: left;
+}
+
+.deck-zone {
+  position: fixed;
+  top: 76px;
+  right: 0px;
+  bottom: 250px;
+  overflow-y: auto;
+}
+
+.deck-zone .zone {
+  height: 50%;
+  overflow-y: auto;
+}
+
+.left-side {
+  float: left;
+}
+
+.right-side {
+  float: right;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 190px;
+  height: 254px;
+  background: rgba(217, 217, 217, 1);
+  border: 3px solid white;
+  /* backdrop-filter: blur(6px); */
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+/* 
+.exchange .card {
+  position: fixed;
+  left: 0px;
+}
+
+.exchange .card:hover {
+  border: 3px solid black;
+  position: fixed;
+  left: 0px;
+} */
+
+.card:hover {
+  /* border: 3px solid black; */
+  /* transform: translate3d(0%, -10%, 0); */
+  /* transition: rotateZ(45deg); */
+}
+
+.card:active {
+  /* transform: scale(0.95) rotateZ(1.7deg); */
+}
+
+.card-type-0 {
+  border: 3px solid #333;
+}
+
+.card-type-1 {
+  border: 3px solid #333;
+}
+
+.card-type-2 {
+  border: 3px solid #4ea929;
+}
+
+.card-type-3 {
+  border: 3px solid #333;
+}
+
+.card-type-4 {
+  border: 3px solid #ff5d5d;
+}
+
+.card-type-5 {
+  border: 3px solid #5686ff;
+}
+
+.card-type-6 {
+  border: 3px solid #333;
+}
+
+.card-type-7 {
+  border: 3px solid #ffec60;
+}
+
+.card-type-8 {
+  border: 3px solid #333;
+}
+
+.card-type-9 {
+  border: 3px solid #333;
+}
